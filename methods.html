@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Payment Method | Buy Me a Chai</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="bg-overlay"></div>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">☕ Buy Me a Chai</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="user.html">Creators</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="methods-section">
+    <div class="methods-box">
+      <h2>Choose Payment Method 💳</h2>
+      <p>Select how you'd like to complete your chai purchase</p>
+
+      <div class="methods-grid">
+        <div class="method-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968770.png" alt="UPI" />
+          <h3>UPI</h3>
+          <p>Google Pay, PhonePe, Paytm UPI</p>
+          <button class="btn" onclick="showSuccess()">Pay with UPI</button>
+        </div>
+
+        <div class="method-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Card" />
+          <h3>Debit / Credit Card</h3>
+          <p>Visa, MasterCard, RuPay, AmEx</p>
+          <button class="btn" onclick="showSuccess()">Pay with Card</button>
+        </div>
+
+        <div class="method-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="Wallet" />
+          <h3>Wallet</h3>
+          <p>Paytm, PhonePe, Amazon Pay</p>
+          <button class="btn" onclick="showSuccess()">Pay via Wallet</button>
+        </div>
+
+        <div class="method-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2089/2089433.png" alt="Bank" />
+          <h3>Net Banking</h3>
+          <p>Access 60+ banks instantly</p>
+          <button class="btn" onclick="showSuccess()">Pay via Net Banking</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Buy Me a Chai — All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
