@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment | Buy Me a Chai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">☕ Buy Me a Chai</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="user.html">Creators</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="payment-section">
+    <div class="payment-box">
+      <h2>Buy a Chai ☕</h2>
+      <p>Show your support by buying a chai for your favorite creator 💛</p>
+
+      <form>
+        <label for="amount">Choose an amount:</label>
+        <select id="amount" required>
+          <option value="50">₹50</option>
+          <option value="100">₹100</option>
+          <option value="200">₹200</option>
+          <option value="custom">Custom</option>
+        </select>
+
+        <label for="message">Add a message (optional):</label>
+        <textarea id="message" rows="3" placeholder="Say something nice..."></textarea>
+
+        <button type="submit" class="btn">Proceed to Payment</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Buy Me a Chai — All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

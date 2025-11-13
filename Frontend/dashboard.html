@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Buy Me a Chai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="bg-overlay"></div>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">☕ Buy Me a Chai</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="user.html">Creators</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <div class="dash-header">
+      <h2>Your Dashboard</h2>
+      <button class="btn">➕ New Post</button>
+    </div>
+
+    <div class="dash-stats">
+      <div class="stat-card">
+        <h3>Total Earnings</h3>
+        <p>₹ 1,250</p>
+      </div>
+      <div class="stat-card">
+        <h3>Supporters</h3>
+        <p>34</p>
+      </div>
+      <div class="stat-card">
+        <h3>Posts</h3>
+        <p>8</p>
+      </div>
+    </div>
+
+    <div class="supporters">
+      <h3>Recent Supporters</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Message</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aarav</td><td>Love your work!</td><td>₹50</td></tr>
+          <tr><td>Sia</td><td>Keep creating ❤️</td><td>₹100</td></tr>
+          <tr><td>Rohan</td><td>Great posts!</td><td>₹30</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Buy Me a Chai — All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
