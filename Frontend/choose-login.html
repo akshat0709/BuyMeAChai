@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Login</title>
+    <link rel="stylesheet" href="choose-login.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Login As</h2>
+
+        <div class="options">
+
+            <div class="box" onclick="goToCreator()">
+                <h3>Creator Login</h3>
+            </div>
+
+            <div class="box" onclick="goToSupporter()">
+                <h3>Supporter Login</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function goToCreator() {
+            window.location.href = "login.html?type=creator";
+        }
+        function goToSupporter() {
+            window.location.href = "login.html?type=supporter";
+        }
+    </script>
+
+</body>
+</html>
