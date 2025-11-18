@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="bg-overlay"></div>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="nav-container">
@@ -22,11 +23,14 @@
     </div>
   </header>
 
-  <!-- Login Section -->
+  <!-- Login / Signup Section -->
   <section class="auth-section">
-    <div class="auth-box">
-      <h2>Welcome Back 👋</h2>
-      <form>
+
+    <!-- LOGIN BOX -->
+    <div class="auth-box" id="loginBox">
+      <h2 id="login-title">Welcome Back 👋</h2>
+
+      <form id="loginForm">
         <label>Email</label>
         <input type="email" placeholder="Enter your email" required />
 
@@ -36,12 +40,16 @@
         <button type="submit" class="btn">Login</button>
       </form>
 
-      <p class="switch-text">Don’t have an account? <a href="#signup" id="signupLink">Sign up</a></p>
+      <p class="switch-text">
+        Don’t have an account? <a href="#signup" id="signupLink">Sign up</a>
+      </p>
     </div>
 
+    <!-- SIGNUP BOX -->
     <div class="auth-box hidden" id="signupBox">
       <h2>Create an Account 🌟</h2>
-      <form>
+
+      <form id="signupForm">
         <label>Name</label>
         <input type="text" placeholder="Enter your name" required />
 
@@ -54,8 +62,11 @@
         <button type="submit" class="btn">Sign Up</button>
       </form>
 
-      <p class="switch-text">Already have an account? <a href="#login" id="loginLink">Login</a></p>
+      <p class="switch-text">
+        Already have an account? <a href="#login" id="loginLink">Login</a>
+      </p>
     </div>
+
   </section>
 
   <!-- Footer -->
@@ -63,6 +74,22 @@
     <p>© 2025 Buy Me a Chai — All Rights Reserved.</p>
   </footer>
 
+  <!-- ROLE DETECTION SCRIPT -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const userType = params.get("type");
+
+    // Change title based on creator/supporter
+    if (userType === "creator") {
+      document.getElementById("login-title").innerText = "Creator Login";
+    } 
+    else if (userType === "supporter") {
+      document.getElementById("login-title").innerText = "Supporter Login";
+    }
+  </script>
+
+  <!-- Page Logic Script -->
   <script src="script.js"></script>
+
 </body>
 </html>
