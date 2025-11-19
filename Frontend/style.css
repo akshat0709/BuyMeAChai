@@ -550,6 +550,14 @@ nav a.active {
     margin-bottom: 15px;
 }
 
+.post-card img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 .footer {
     background-color: rgba(20, 20, 20, 0.8);
