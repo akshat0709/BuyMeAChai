@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creator Settings | Buy Me a Chai</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background:#0c0c0c; color:#fff; font-family:"Poppins"; }
+
+        .dashboard-container { display:flex; min-height:100vh; }
+        .sidebar { width:250px; background:#111; padding:20px; }
+        .sidebar a { display:block; padding:12px; margin:8px 0; background:#1a1a1a; color:#ccc; 
+                     text-decoration:none; border-radius:8px; transition:.3s; }
+        .sidebar a:hover { background:#facc15; color:#000; }
+
+        .main-content { flex:1; padding:30px; }
+
+        input { width:100%; padding:10px; margin:10px 0; border:none; border-radius:8px; background:#111; color:#fff; }
+        .btn { background:#facc15; padding:10px 15px; border:none; border-radius:6px; margin-top:10px; cursor:pointer; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+        <h2>Creator Menu</h2>
+        <a href="creator-dashboard.html">Dashboard</a>
+        <a href="creator-posts.html">Posts</a>
+        <a href="creator-supporters.html">Supporters</a>
+        <a href="creator-settings.html" style="background:#facc15;color:#000;">Settings</a>
+        <a href="choose-login.html">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Settings</h1>
+
+        <h3>Profile Settings</h3>
+        <input type="text" placeholder="Change Username">
+        <input type="email" placeholder="Change Email">
+
+        <h3>Password Change</h3>
+        <input type="password" placeholder="Current Password">
+        <input type="password" placeholder="New Password">
+        <input type="password" placeholder="Confirm New Password">
+
+        <button class="btn">Save Changes</button>
+    </div>
+
+</div>
+
+<script>
+    const role = sessionStorage.getItem("role");
+    if (role !== "creator") {
+        alert("Access Denied!");
+        window.location.href = "supporter-home.html";
+    }
+</script>
+
+
+</body>
+</html>
