@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Supporters | Buy Me a Chai</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background:#0c0c0c; color:white; font-family:"Poppins"; }
+
+        .dashboard-container { display:flex; min-height:100vh; }
+        .sidebar { width:250px; background:#111; padding:20px; border-right:1px solid #222; }
+        .sidebar a { display:block; padding:12px; margin:8px 0; background:#1a1a1a; color:#ccc;
+                     text-decoration:none; border-radius:8px; transition:.3s; }
+        .sidebar a:hover { background:#facc15; color:#000; }
+
+        .main-content { flex:1; padding:30px; }
+        table { width:100%; border-collapse:collapse; }
+        th, td { padding:12px; border-bottom:1px solid #333; }
+        th { background:#222; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+        <h2>Creator Menu</h2>
+        <a href="creator-dashboard.html">Dashboard</a>
+        <a href="creator-posts.html">Posts</a>
+        <a href="creator-supporters.html" style="background:#facc15;color:#000;">Supporters</a>
+        <a href="creator-settings.html">Settings</a>
+        <a href="choose-login.html">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Your Supporters</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Chais</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Rohit Sharma</td><td>3</td><td>You inspire us!</td></tr>
+                <tr><td>Alisha</td><td>1</td><td>Amazing work 💛</td></tr>
+                <tr><td>Samarth</td><td>5</td><td>Keep going!</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+    const role = sessionStorage.getItem("role");
+    if (role !== "creator") {
+        alert("Access Denied!");
+        window.location.href = "supporter-home.html";
+    }
+</script>
+
+</body>
+</html>
