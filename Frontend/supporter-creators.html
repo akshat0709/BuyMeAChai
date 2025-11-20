@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creators | Buy Me a Chai</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       background: #0c0c0c;
@@ -13,7 +15,6 @@
       margin: 0;
     }
 
-    /* Sidebar */
     .sidebar {
       width: 250px;
       background: #111;
@@ -46,7 +47,6 @@
       color: #000;
     }
 
-    /* Main content */
     .main-content {
       margin-left: 270px;
       padding: 30px;
@@ -63,7 +63,6 @@
       color: #ccc;
     }
 
-    /* Creator grid */
     .creator-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -101,6 +100,17 @@
       margin-bottom: 12px;
     }
 
+    .social-icons a {
+      margin: 0 8px;
+      color: #f0c674;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffe28a;
+    }
+
     .creator-card .btn {
       padding: 10px 18px;
       background: #f0c674;
@@ -112,6 +122,7 @@
       transition: 0.3s;
       text-decoration: none;
       display: inline-block;
+      margin-top: 12px;
     }
 
     .creator-card .btn:hover {
@@ -127,7 +138,6 @@
 </head>
 <body>
 
-  <!-- Sidebar -->
   <div class="sidebar">
     <h2>Supporter Menu</h2>
     <a href="supporter-home.html">Dashboard</a>
@@ -136,57 +146,106 @@
     <a href="index.html">Logout</a>
   </div>
 
-  <!-- Main content -->
   <div class="main-content">
     <h1>Featured Creators</h1>
     <p class="subtitle">Support amazing creators and fuel their creativity 🌟</p>
 
     <div class="creator-grid">
+
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Sharma" />
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" />
         <h3>Priya Sharma</h3>
         <p>Loves Painting</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
 
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Rahul Verma" />
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" />
         <h3>Rahul Verma</h3>
         <p>Web Developer | Sharing tips, projects, and tech guides 💻</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
 
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Ananya Singh" />
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" />
         <h3>Ananya Singh</h3>
         <p>Writer | Brewing heartfelt chai stories ☕📖</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
 
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Arjun Mehta" />
+        <img src="https://randomuser.me/api/portraits/men/42.jpg" />
         <h3>Arjun Mehta</h3>
         <p>Photographer | Capturing moments that tell stories 📸</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
 
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="Simran Kaur" />
+        <img src="https://randomuser.me/api/portraits/women/16.jpg" />
         <h3>Simran Kaur</h3>
         <p>Musician | Creating soulful tunes with every chai 🎵</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
 
       <div class="creator-card">
-        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Vikram Desai" />
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" />
         <h3>Vikram Desai</h3>
         <p>Digital Artist | Mixing pixels with creativity 🖌️</p>
-        <a href="payment.html" class="btn buy-chai-btn">Buy a Chai</a>
+      
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      
+        <a href="payment.html" class="btn">Buy a Chai</a>
       </div>
     </div>
   </div>
 
 <script src="script.js"></script>
+
 <script>
   // Role check
   const role = sessionStorage.getItem("role");
@@ -194,7 +253,6 @@
     alert("Access Denied! Only supporters can view this page.");
     window.location.href = "creator-dashboard.html";
   }
-
 </script>
 
 </body>
